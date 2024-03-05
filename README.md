@@ -18,11 +18,10 @@ mv Crypto\ Creeper.app ~/Applications/.
 <img width="346" alt="dock" src="https://github.com/se7enack/Crypto-Creeper/assets/18600808/6ed40111-7246-4175-b09b-3ea64dac5701">
 
 ## Using the app
-<img width="287" alt="picker" src="https://github.com/se7enack/Crypto-Creeper/assets/18600808/5a0748ff-6bbe-4453-86fa-64aac71000ed">
-
 <br>
 
-<img width="303" alt="results" src="https://github.com/se7enack/Crypto-Creeper/assets/18600808/c55bb2a8-5a4e-44e6-bf24-ff90408194ff">
+<img width="516" alt="copyright" src="https://github.com/se7enack/Crypto-Creeper/assets/18600808/803fea26-70b8-4b3e-a07a-426eae33b733">
+
 
 <br>
 
