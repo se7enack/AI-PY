@@ -56,7 +56,7 @@ def showsyms():
                 priceUsd = float(x['data'][y]['priceUsd'])
                 changePercent24Hr = str(round(float(x['data'][y]['changePercent24Hr']), 2))
                 if changePercent24Hr.startswith('-'):
-                    p = f"Down {changePercent24Hr}% in the last 24 hours"
+                    p = f"Down {changePercent24Hr.lstrip('-')}% in the last 24 hours"
                 else:
                     p = f"Up {changePercent24Hr}% in the last 24 hours"
                 price = makeusd(priceUsd)
