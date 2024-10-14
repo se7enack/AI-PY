@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from tkinter import *
-import locale
 import json
 import requests
 import webbrowser
