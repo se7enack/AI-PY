@@ -33,7 +33,6 @@ options = showsyms()
 
 
 def makeusd(cash):
-    print(cash)
     x = str(cash).startswith("0.00")
     if x == True:
         usd = f"${cash}"
