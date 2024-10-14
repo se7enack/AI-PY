@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from tkinter import *
-import locale
 import json
 import requests
 import webbrowser
@@ -10,7 +9,7 @@ import webbrowser
 url = "https://api.coincap.io/v2/assets"
 
 try:
-    req = requests.get(url)
+    req = requests.get(url, verify=False)
     x = json.loads(req.text)
 except:
     print("exit")
@@ -34,8 +33,11 @@ options = showsyms()
 
 
 def makeusd(cash):
-    locale.setlocale( locale.LC_ALL, 'en_US.UTF-8' )
-    usd = locale.currency( cash, grouping=True )
+    x = cash.startswith("0.00")
+    if x == True:
+        usd = f"${cash}"
+    else:
+        usd = '${:,.2f}'.format(float(cash))
     return(usd)
 
 
@@ -46,7 +48,7 @@ def update(txt):
 def showsyms():
     global asseturl
     try:
-        req = requests.get(url)
+        req = requests.get(url, verify=False)
         x = json.loads(req.text)
         for y in range(len(x['data'])):
             if x['data'][y]['symbol'] == clicked.get(): 
