@@ -7,7 +7,7 @@
 ```
 git clone https://github.com/se7enack/Crypto-Creeper.git
 cd Crypto-Creeper/mac-binary
-unzip cryptocreeper-v1.0.1.zip
+unzip cryptocreeper-v2.0.0.zip
 mv Crypto\ Creeper.app ~/Applications/.
 ```
 
