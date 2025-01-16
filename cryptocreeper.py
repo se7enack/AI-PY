@@ -22,6 +22,7 @@ def callback():
 
 
 def showsyms():
+    global values
     values = []
     for y in range(len(x['data'])):
          values.append(x['data'][y]['symbol'])
@@ -74,7 +75,10 @@ myLabel = Label(root, text='\n\nPick a Crypto\n\n')
 myLabel.pack()
 
 clicked = StringVar()
-clicked.set('BTC')
+if 'DOGE' in values:
+    clicked.set('DOGE')
+else:
+    clicked.set(values[0])
 
 drop = OptionMenu(root, clicked, *options)
 drop.pack()
