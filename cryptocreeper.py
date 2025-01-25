@@ -75,8 +75,8 @@ myLabel = Label(root, text='\n\nPick a Crypto\n\n')
 myLabel.pack()
 
 clicked = StringVar()
-if 'DOGE' in values:
-    clicked.set('DOGE')
+if 'BTC' in values:
+    clicked.set('BTC')
 else:
     clicked.set(values[0])
 
